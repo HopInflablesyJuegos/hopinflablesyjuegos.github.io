@@ -377,7 +377,7 @@ const PRODUCTOS = [
   {id:20, nombre:"Plaza Blanda Montessori", fotos:"plaza_blanda", desc:"Plaza blanda estilo Montessori: autitos, sube y baja, rampa, paneles sensoriales y alfombras. Ideal para bebés y primeros pasos.", precio:0, tipo:"plaza", evento:["cumple","fiesta","escuela"], espacio:"mediano", edad:["0-3"]},
   {id:44, nombre:"Plaza Blanda", fotos:"plaza_blanda_clasica", emoji:"🧸", desc:"10 a 12 juegos que van rotando: saltarines, motitos, pata pata, piso antigolpe, aro de básquet, pelotero y tobogán. De 1 a 4 años.", precio:0, tipo:"plaza", evento:["cumple","fiesta","escuela"], espacio:"mediano", edad:["0-3","4-6"]},
   {id:56, nombre:"Pequeños Descubridores", fotos:"descubridores", desc:"Exploración y juego para estimular motricidad, creatividad y curiosidad. De 1 a 3 años.", precio:0, tipo:"plaza", evento:["cumple","escuela"], espacio:"chico", edad:["0-3"]},
-  {id:9, nombre:"Cama Elástica", fotos:"cama_elastica", desc:"Cama elástica grande con red de protección.", precio:0, tipo:"salon", evento:["cumple","fiesta","escuela"], espacio:"mediano", edad:["4-6","7-12"]},
+  {id:9, nombre:"Cama Elástica", fotos:"cama_elastica", desc:"Cama elástica grande con red de protección.", precio:0, tipo:"camas", evento:["cumple","fiesta","escuela"], espacio:"mediano", edad:["4-6","7-12"]},
   {id:10, nombre:"Mesa de Pool", fotos:"pool", desc:"Mesa de pool con tacos y bochas. Para el rincón de los grandes.", precio:0, tipo:"salon", evento:["cumple","empresarial","fiesta"], espacio:"chico", edad:["7-12","ados-adultos"]},
   {id:12, nombre:"Péndulo Shot", fotos:"pendulo_shot", emoji:"🥃", desc:"El clásico péndulo, versión shot. Puntería y risas aseguradas en la previa.", precio:0, tipo:"salon", evento:["previa","fiesta"], espacio:"chico", edad:["ados-adultos"]},
   {id:15, nombre:"Ludo de Shot", fotos:"ludo_shot", emoji:"🎲", desc:"El ludo de siempre, pero con shots. Que gane el más rápido... y el más firme.", precio:0, tipo:"salon", evento:["previa","fiesta"], espacio:"chico", edad:["ados-adultos"]},
@@ -403,28 +403,28 @@ const PRODUCTOS = [
   {id:62, nombre:"Tiembla Pelota", fotos:"tiembla_pelota", desc:"Juego de equilibrio y coordinación para jugar de a dos: ¡que no se caiga la pelota!", precio:0, tipo:"kermesse", evento:["cumple","fiesta","escuela"], espacio:"chico", edad:["4-6","7-12"]},
   {id:63, nombre:"Emboca Bolsas", fotos:"emboca_bolsas", desc:"El payaso traga bolsas: embocá las bolsitas en la boca del payaso y sumá puntos.", precio:0, tipo:"kermesse", evento:["cumple","fiesta","escuela"], espacio:"chico", edad:["4-6","7-12"]},
   {id:64, nombre:"Péndulo", fotos:"pendulo", desc:"El clásico péndulo de puntería en versión familiar: acertá en los vasos y sumá puntos.", precio:0, tipo:"kermesse", evento:["cumple","fiesta","escuela"], espacio:"chico", edad:["4-6","7-12","ados-adultos"]},
-  {id:45, nombre:"Glitter Bar", fotos:"glitter_bar", desc:"Espejos, set de apliques, strass, glitters y spray para el pelo. ¡Brillo para todo el evento!", precio:0, tipo:"taller", evento:["cumple","fiesta","escuela"], espacio:"chico", edad:["4-6","7-12","ados-adultos"]},
-  {id:46, nombre:"Disfrazarte", fotos:"disfrazarte", desc:"Capas, máscaras, capelinas, pelucas y vinchas para transformar tu evento en una aventura única.", precio:0, tipo:"taller", evento:["cumple","fiesta","escuela"], espacio:"chico", edad:["4-6","7-12"]},
-  {id:47, nombre:"Juegos de Competencia", fotos:"juegos_competencia", desc:"Carrera de embolsados, búsqueda del tesoro, juegos con globos y pelotas, postas ¡y mucho más!", precio:0, tipo:"taller", evento:["cumple","fiesta","escuela"], espacio:"mediano", edad:["4-6","7-12"]},
-  {id:48, nombre:"Miniglam SPA", fotos:"miniglam", desc:"Una experiencia pensada para que las más peques se relajen, se diviertan y se sientan únicas. Ideal cumples y pijamadas.", precio:0, tipo:"taller", evento:["cumple","fiesta"], espacio:"chico", edad:["4-6","7-12"]},
-  {id:49, nombre:"Tattoo Kids + Pinta Pelo", fotos:"tattoo_kids", desc:"Tatuajes con glitter y spray de colores lavables para el pelo. Productos seguros e hipoalergénicos.", precio:0, tipo:"taller", evento:["cumple","fiesta","escuela"], espacio:"chico", edad:["4-6","7-12"]},
-  {id:50, nombre:"Espacio de Kermesse", fotos:"kermesse", desc:"Tiro al blanco, cola al burro, cornhole, tateti, emboca pelotas, pesca magic, Punzzle 3D y payaso traga bolsas. Incluye animadora.", precio:0, tipo:"taller", evento:["cumple","fiesta","escuela"], espacio:"mediano", edad:["4-6","7-12"]},
-  {id:51, nombre:"Burbujas Mágicas", fotos:"burbujas_magicas", desc:"Máquina de burbujas con soporte, máquina de nieve y sets para burbujas gigantes.", precio:0, tipo:"taller", evento:["cumple","fiesta","escuela"], espacio:"chico", edad:["0-3","4-6","7-12"]},
-  {id:52, nombre:"Deco Cookies", fotos:"deco_cookies", desc:"Masitas, mangas, toppings, glasé y chips de chocolate para decorar ¡y llevarse su creación!", precio:0, tipo:"taller", evento:["cumple","fiesta","escuela"], espacio:"chico", edad:["4-6","7-12"]},
-  {id:53, nombre:"Espacio de Decorarte", fotos:"decorarte", desc:"Colores, pinturas, témperas, lentejuelas y mucho más, con animadora incluida.", precio:0, tipo:"taller", evento:["cumple","fiesta","escuela"], espacio:"chico", edad:["4-6","7-12"]},
-  {id:54, nombre:"Llaveros Mágicos", fotos:"llaveros", desc:"Figuras de madera, pinturas, pinceles e hilos para crear su propio llavero, con guía incluida.", precio:0, tipo:"taller", evento:["cumple","fiesta","escuela"], espacio:"chico", edad:["4-6","7-12"]},
-  {id:55, nombre:"ActivaMente", fotos:"activamente", desc:"Juegos que estimulan la memoria, la atención y la concentración, acompañados de una seño especializada. De 4 a 6 años.", precio:0, tipo:"taller", evento:["cumple","escuela"], espacio:"chico", edad:["4-6"]},
-  {id:57, nombre:"Guardianes del Jardín", fotos:"guardianes", desc:"Arman un rompecabezas con distintos materiales que se convierte en tutor para plantas ¡y se lo llevan de recuerdo!", precio:0, tipo:"taller", evento:["cumple","escuela"], espacio:"chico", edad:["4-6","7-12"]},
-  {id:58, nombre:"Aventureros", fotos:"aventureros", desc:"Búsqueda del tesoro con pistas y desafíos hasta encontrar el gran premio. De 8 a 15 años.", precio:0, tipo:"taller", evento:["cumple","fiesta","escuela"], espacio:"mediano", edad:["7-12","ados-adultos"]},
-  {id:59, nombre:"Pequeños Escultores", fotos:"escultores", desc:"Modelan sus propias creaciones con arcilla, explorando formas, texturas y volúmenes.", precio:0, tipo:"taller", evento:["cumple","escuela"], espacio:"chico", edad:["4-6","7-12"]},
-  {id:60, nombre:"EstampArte", fotos:"estamparte", desc:"Personalizan una bolsita de lienzo con stencils y pinturas, para llevarse un diseño único de recuerdo.", precio:0, tipo:"taller", evento:["cumple","escuela"], espacio:"chico", edad:["4-6","7-12"]},
+  {id:45, nombre:"Glitter Bar", fotos:"glitter_bar", desc:"Espejos, set de apliques, strass, glitters y spray para el pelo. ¡Brillo para todo el evento!", precio:0, tipo:"taller", animacion:true, evento:["cumple","fiesta","escuela"], espacio:"chico", edad:["4-6","7-12","ados-adultos"]},
+  {id:46, nombre:"Disfrazarte", fotos:"disfrazarte", desc:"Capas, máscaras, capelinas, pelucas y vinchas para transformar tu evento en una aventura única.", precio:0, tipo:"taller", animacion:true, evento:["cumple","fiesta","escuela"], espacio:"chico", edad:["4-6","7-12"]},
+  {id:47, nombre:"Juegos de Competencia", fotos:"juegos_competencia", desc:"Carrera de embolsados, búsqueda del tesoro, juegos con globos y pelotas, postas ¡y mucho más!", precio:0, tipo:"taller", animacion:true, evento:["cumple","fiesta","escuela"], espacio:"mediano", edad:["4-6","7-12"]},
+  {id:48, nombre:"Miniglam SPA", fotos:"miniglam", desc:"Una experiencia pensada para que las más peques se relajen, se diviertan y se sientan únicas. Ideal cumples y pijamadas.", precio:0, tipo:"taller", animacion:true, evento:["cumple","fiesta"], espacio:"chico", edad:["4-6","7-12"]},
+  {id:49, nombre:"Tattoo Kids + Pinta Pelo", fotos:"tattoo_kids", desc:"Tatuajes con glitter y spray de colores lavables para el pelo. Productos seguros e hipoalergénicos.", precio:0, tipo:"taller", animacion:true, evento:["cumple","fiesta","escuela"], espacio:"chico", edad:["4-6","7-12"]},
+  {id:50, nombre:"Espacio de Kermesse", fotos:"kermesse", desc:"Tiro al blanco, cola al burro, cornhole, tateti, emboca pelotas, pesca magic, Punzzle 3D y payaso traga bolsas. Incluye animadora.", precio:0, tipo:"taller", animacion:true, evento:["cumple","fiesta","escuela"], espacio:"mediano", edad:["4-6","7-12"]},
+  {id:51, nombre:"Burbujas Mágicas", fotos:"burbujas_magicas", desc:"Máquina de burbujas con soporte, máquina de nieve y sets para burbujas gigantes.", precio:0, tipo:"taller", animacion:true, evento:["cumple","fiesta","escuela"], espacio:"chico", edad:["0-3","4-6","7-12"]},
+  {id:52, nombre:"Deco Cookies", fotos:"deco_cookies", desc:"Masitas, mangas, toppings, glasé y chips de chocolate para decorar ¡y llevarse su creación!", precio:0, tipo:"taller", animacion:true, evento:["cumple","fiesta","escuela"], espacio:"chico", edad:["4-6","7-12"]},
+  {id:53, nombre:"Espacio de Decorarte", fotos:"decorarte", desc:"Colores, pinturas, témperas, lentejuelas y mucho más, con animadora incluida.", precio:0, tipo:"taller", animacion:true, evento:["cumple","fiesta","escuela"], espacio:"chico", edad:["4-6","7-12"]},
+  {id:54, nombre:"Llaveros Mágicos", fotos:"llaveros", desc:"Figuras de madera, pinturas, pinceles e hilos para crear su propio llavero, con guía incluida.", precio:0, tipo:"taller", animacion:true, evento:["cumple","fiesta","escuela"], espacio:"chico", edad:["4-6","7-12"]},
+  {id:55, nombre:"ActivaMente", fotos:"activamente", desc:"Juegos que estimulan la memoria, la atención y la concentración, acompañados de una seño especializada. De 4 a 6 años.", precio:0, tipo:"taller", animacion:true, evento:["cumple","escuela"], espacio:"chico", edad:["4-6"]},
+  {id:57, nombre:"Guardianes del Jardín", fotos:"guardianes", desc:"Arman un rompecabezas con distintos materiales que se convierte en tutor para plantas ¡y se lo llevan de recuerdo!", precio:0, tipo:"taller", animacion:true, evento:["cumple","escuela"], espacio:"chico", edad:["4-6","7-12"]},
+  {id:58, nombre:"Aventureros", fotos:"aventureros", desc:"Búsqueda del tesoro con pistas y desafíos hasta encontrar el gran premio. De 8 a 15 años.", precio:0, tipo:"taller", animacion:true, evento:["cumple","fiesta","escuela"], espacio:"mediano", edad:["7-12","ados-adultos"]},
+  {id:59, nombre:"Pequeños Escultores", fotos:"escultores", desc:"Modelan sus propias creaciones con arcilla, explorando formas, texturas y volúmenes.", precio:0, tipo:"taller", animacion:true, evento:["cumple","escuela"], espacio:"chico", edad:["4-6","7-12"]},
+  {id:60, nombre:"EstampArte", fotos:"estamparte", desc:"Personalizan una bolsita de lienzo con stencils y pinturas, para llevarse un diseño único de recuerdo.", precio:0, tipo:"taller", animacion:true, evento:["cumple","escuela"], espacio:"chico", edad:["4-6","7-12"]},
 ];
 
 const FILTROS = [
   {key:"evento", label:"\ud83c\udf89 Tipo de evento", opciones:[{v:"cumple",label:"Cumplea\u00f1os"},{v:"empresarial",label:"Empresarial"},{v:"fiesta",label:"Fiesta"},{v:"previa",label:"Previa +18"},{v:"escuela",label:"Jard\u00edn / Escuela"}]},
   {key:"espacio", label:"\ud83d\udccf Espacio que necesita", opciones:[{v:"chico",label:"Chico"},{v:"mediano",label:"Mediano"},{v:"grande",label:"Grande"}]},
   {key:"edad", label:"\ud83e\uddd2 Edad de los chicos", opciones:[{v:"0-3",label:"0 a 3"},{v:"4-6",label:"4 a 6"},{v:"7-12",label:"7 a 12"},{v:"ados-adultos",label:"Adolescentes / adultos"}]},
-  {key:"tipo", label:"\ud83c\udf88 Tipo de juego", opciones:[{v:"inflable",label:"Castillos y m\u00e1s"},{v:"acuatico",label:"Juegos acu\u00e1ticos"},{v:"mecanico",label:"Toro mec\u00e1nico"},{v:"plaza",label:"Plazas blandas"},{v:"salon",label:"Juegos de sal\u00f3n"},{v:"kermesse",label:"Juegos de kermesse"},{v:"taller",label:"Talleres y espacios"}]},
+  {key:"tipo", label:"\ud83c\udf88 Tipo de juego", opciones:[{v:"inflable",label:"Castillos y m\u00e1s"},{v:"acuatico",label:"Juegos acu\u00e1ticos"},{v:"mecanico",label:"Toro mec\u00e1nico"},{v:"plaza",label:"Plazas blandas"},{v:"camas",label:"Camas el\u00e1sticas"},{v:"salon",label:"Juegos de sal\u00f3n"},{v:"kermesse",label:"Juegos de kermesse"},{v:"taller",label:"Talleres y espacios"},{v:"animacion",label:"Con animaci\u00f3n"}]},
 ];
 
 let seleccion = {evento:null, espacio:null, edad:null, tipo:null};
@@ -450,10 +450,13 @@ function pasaFiltros(p){
   if(seleccion.evento && !p.evento.includes(seleccion.evento)) return false;
   if(seleccion.espacio && p.espacio!==seleccion.espacio) return false;
   if(seleccion.edad && !p.edad.includes(seleccion.edad)) return false;
-  if(seleccion.tipo && p.tipo!==seleccion.tipo) return false;
+  if(seleccion.tipo){
+    if(seleccion.tipo==="animacion"){ if(!p.animacion) return false; }
+    else if(p.tipo!==seleccion.tipo) return false;
+  }
   return true;
 }
-function nombreTipo(t){return {inflable:"Inflable",acuatico:"Acu\u00e1tico",mecanico:"Mec\u00e1nico",plaza:"Plaza blanda",salon:"Sal\u00f3n",kermesse:"Kermesse",taller:"Taller"}[t]||t}
+function nombreTipo(t){return {inflable:"Inflable",acuatico:"Acu\u00e1tico",mecanico:"Mec\u00e1nico",plaza:"Plaza blanda",camas:"Cama el\u00e1stica",salon:"Sal\u00f3n",kermesse:"Kermesse",taller:"Taller"}[t]||t}
 function renderGrid(){
   const grid = document.getElementById("grid");
   const lista = PRODUCTOS.filter(pasaFiltros);
