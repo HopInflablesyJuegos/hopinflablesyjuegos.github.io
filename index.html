@@ -424,7 +424,7 @@ const FILTROS = [
   {key:"evento", label:"\ud83c\udf89 Tipo de evento", opciones:[{v:"cumple",label:"Cumplea\u00f1os"},{v:"empresarial",label:"Empresarial"},{v:"fiesta",label:"Fiesta"},{v:"previa",label:"Previa +18"},{v:"escuela",label:"Jard\u00edn / Escuela"}]},
   {key:"espacio", label:"\ud83d\udccf Espacio que necesita", opciones:[{v:"chico",label:"Chico"},{v:"mediano",label:"Mediano"},{v:"grande",label:"Grande"}]},
   {key:"edad", label:"\ud83e\uddd2 Edad de los chicos", opciones:[{v:"0-3",label:"0 a 3"},{v:"4-6",label:"4 a 6"},{v:"7-12",label:"7 a 12"},{v:"ados-adultos",label:"Adolescentes / adultos"}]},
-  {key:"tipo", label:"\ud83c\udf88 Tipo de juego", opciones:[{v:"inflable",label:"Castillos y m\u00e1s"},{v:"acuatico",label:"Juegos acu\u00e1ticos"},{v:"mecanico",label:"Toro mec\u00e1nico"},{v:"plaza",label:"Plazas blandas"},{v:"camas",label:"Camas el\u00e1sticas"},{v:"salon",label:"Juegos de sal\u00f3n"},{v:"kermesse",label:"Juegos de kermesse"},{v:"taller",label:"Talleres y espacios"},{v:"animacion",label:"Con animaci\u00f3n"}]},
+  {key:"tipo", label:"\ud83c\udf88 Tipo de juego", opciones:[{v:"inflable",label:"Castillos y m\u00e1s"},{v:"acuatico",label:"Juegos acu\u00e1ticos"},{v:"mecanico",label:"Toro mec\u00e1nico"},{v:"plaza",label:"Plazas blandas"},{v:"camas",label:"Camas el\u00e1sticas"},{v:"salon",label:"Juegos de sal\u00f3n"},{v:"kermesse",label:"Juegos de kermesse"},{v:"animacion",label:"Con animaci\u00f3n"}]},
 ];
 
 let seleccion = {evento:null, espacio:null, edad:null, tipo:null};
@@ -456,7 +456,7 @@ function pasaFiltros(p){
   }
   return true;
 }
-function nombreTipo(t){return {inflable:"Inflable",acuatico:"Acu\u00e1tico",mecanico:"Mec\u00e1nico",plaza:"Plaza blanda",camas:"Cama el\u00e1stica",salon:"Sal\u00f3n",kermesse:"Kermesse",taller:"Taller"}[t]||t}
+function nombreTipo(t){return {inflable:"Inflable",acuatico:"Acu\u00e1tico",mecanico:"Mec\u00e1nico",plaza:"Plaza blanda",camas:"Cama el\u00e1stica",salon:"Sal\u00f3n",kermesse:"Kermesse",taller:"Con animación"}[t]||t}
 function renderGrid(){
   const grid = document.getElementById("grid");
   const lista = PRODUCTOS.filter(pasaFiltros);
